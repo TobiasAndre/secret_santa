@@ -40,7 +40,7 @@ gem 'rails-ujs', '~> 0.1.0'
 gem 'devise'
 gem 'materialize-sass', '~> 0.99.0'
 gem 'material_icons'
-gem 'redis'
+gem 'redis', '>= 4.0'
 gem 'sidekiq'
 
 group :development, :test do
