@@ -17,7 +17,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && apt-get update && apt-get install -y yarn
       
 # Define our patch
-ENV INSTALL_PATH /nosso_amigo_secreto
+ENV INSTALL_PATH /secret_santa
 # Creates our directory
 RUN mkdir -p $INSTALL_PATH
 # Defines our path as main directory
