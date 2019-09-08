@@ -1,4 +1,5 @@
 class Member < ApplicationRecord
+  after_destroy :set_campaign_pending
   belongs_to :campaign
   after_save :set_campaign_pending
   validates :name, :email, :campaign, presence: true

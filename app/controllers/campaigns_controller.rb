@@ -44,7 +44,7 @@ class CampaignsController < ApplicationController
   def raffle
     respond_to do |format|
       if @campaign.status != "pending"
-        format.json { render json: 'Has already been drawn!', status: :unprocessable_entity }
+        format.json { render json: 'Has already been raffled!', status: :unprocessable_entity }
       elsif @campaign.members.count < 3
         format.json { render json: 'Campaign needs at least 3 people!', status: :unprocessable_entity }
       else

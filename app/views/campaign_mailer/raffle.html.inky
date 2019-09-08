@@ -1,0 +1,42 @@
+<container class="body-drip">
+  <spacer size="16"></spacer>
+
+  <!-- <center> -->
+    <row>
+      <columns large="2">
+      </columns>
+      <columns large="1" class="center">
+        <img src="http://localhost:3000/assets/gift.png" alt="">
+      </columns>
+      <columns large="8">
+        <h4>Secret Santa</h4>
+      </columns>
+    </row>
+  <!-- </center> -->
+
+  <spacer size="16"></spacer>
+
+  <row>
+    <columns>
+      <h4 class="text-center"><%= @campaign.title %></h4>
+      <p class="text-center"><b><%= (@campaign.event_date)? "#{@campaign.event_date.strftime("%d/%m/%y")} | " : '' %></b><b><%= @campaign.locale %></b></p>
+      <spacer size="16"></spacer>
+      <p class="text-center"><%= @campaign.description %></p>
+    </columns>
+  </row>
+
+  <hr/>
+
+  <row>
+    <columns>
+      <spacer size="4"></spacer>
+      <h6 class="text-center">Hello <%= @member.name %></h6>
+      <p class="text-center"><%= @campaign.user.name %> created a campaign for Secret Santa and included you.</p>
+      <p class="text-center">See your friend bellow.</p>
+      <spacer size="8"></spacer>
+      <p class="text-center">Your friend is :&nbsp;<b><u><%= @friend.name %></u></b></p>
+      <spacer size="8"></spacer>
+    </columns>
+  </row>
+  <img src='<%= "#{ActionMailer::Base.default_url_options[:host]}/members/#{@member.token}/opened" %>' width="1" height="1">
+</container>

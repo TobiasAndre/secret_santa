@@ -1,0 +1,19 @@
+<div class="row campaigns">
+  <div class="col s8 offset-s2">
+    <p class="title">Campaigns</p>
+  </div>
+
+  <div class="row cards">
+    <div class="col s8 offset-s2">
+      <%= render 'shared/campaigns', campaigns: @campaigns %>
+    </div>
+  </div>
+
+  <div class="fixed-action-btn campaigns-btn">
+    <%= form_tag("/campaigns", method: "post") do %>
+      <button class="btn-floating btn-large red pulse" type="submit">
+        <i class="large material-icons">add</i>
+      </button>
+    <% end %>
+  </div>
+</div>
