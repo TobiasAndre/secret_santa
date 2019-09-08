@@ -4,6 +4,6 @@ class CampaignMailer < ApplicationMailer
     @campaign = campaign
     @member = member
     @friend = friend
-    mail to: @member.email, subject: "secret santa: #{@campaign.title}"
+    mail to: @member.email, subject: "Secret Santa: #{@campaign.title}"
   end
 end
