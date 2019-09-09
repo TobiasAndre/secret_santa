@@ -18,7 +18,7 @@
         <div class="row status">
           <div class="col s6 m6 l4 visibility">
             <i class="material-icons visibility-icon">visibility</i>
-            <span class="visibility-text">Vistos <%= open_number(c) %></span>
+            <span class="visibility-text">Viewed <%= open_number(c) %></span>
           </div>
           <div class="col s2 m2 offset-s4 l2 offset-l6">
             <span class="new badge <%= (c.status == "pending")? 'orange' : '' %>"> <%= (c.status == "pending")? 'Pending' : 'Raffled' %> </span>
