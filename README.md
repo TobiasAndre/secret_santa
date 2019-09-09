@@ -1,8 +1,11 @@
 Secret Santa
+===================
 
 Secret Santa is a Ruby on Rails solution for drawing friend / family names for this celebration.
 
-**How it works**
+How it works
+----------
+
 You need only an email and name of participants!
 After drawing names, every participant will receive an email containing your friend name.
 
