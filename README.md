@@ -9,7 +9,7 @@ How it works
 You need only an email and name of participants!
 After drawing names, every participant will receive an email containing your friend name.
 
-===================
+
 
 ## Screens
 ![screen](../master/app_images/image01.png)
